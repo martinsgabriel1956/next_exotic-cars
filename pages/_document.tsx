@@ -31,7 +31,14 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+        <link
+          rel="preload"
+          href="/fonts/Segoe-UI/Segoe-UI.ttf"
+          as="font"
+          crossOrigin=""
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
