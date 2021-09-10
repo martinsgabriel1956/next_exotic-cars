@@ -16,7 +16,7 @@ export const Logo = styled.h1`
   font-weight: 500;
   letter-spacing: 2px;
   
-  padding-left: 5em;
+  padding-left: 4em;
   
   span {
     margin-left: .25em;

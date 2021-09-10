@@ -65,7 +65,7 @@ export const SearchButton = styled.button`
   cursor: pointer;
 
   position: absolute;
-  right: 30.65%;
+  right: 31.5%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
