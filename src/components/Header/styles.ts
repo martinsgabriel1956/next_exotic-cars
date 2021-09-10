@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   box-shadow: 0px 10px 30px #0000001A;
-  padding: .25em;
+  padding: .75em .25em;
 
   display: flex;
   align-items: center;
@@ -13,8 +13,10 @@ export const Logo = styled.h1`
   text-transform: uppercase;
   font-size: 24px;
   color: #313136;
+  font-weight: 500;
+  letter-spacing: 2px;
   
-  padding-left: 6em;
+  padding-left: 5em;
   
   span {
     margin-left: .25em;

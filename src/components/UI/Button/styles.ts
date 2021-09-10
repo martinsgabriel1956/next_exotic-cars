@@ -6,8 +6,8 @@ export const Container = styled.button`
   cursor: pointer;
   background: transparent;
   font-size: 1em;
-  border: ${props => props.isSignIn === true ? '2px solid #7B89F4' : 'none'};
-  padding: .45em .85em;
+  border: ${props => props.isSignIn === true ? '3px solid #7B89F4' : 'none'};
+  padding: .35em .75em;
   border-radius: .75em;
   transition: all .3s;
 
