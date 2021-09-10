@@ -1,14 +1,23 @@
 import type { NextPage } from "next";
+import { useRouter } from "next/dist/client/router";
+
 import { CarComponent } from "../src/components/CarComponent";
 import { Header } from "../src/components/Header";
 
 import { CarsContainer } from '../styles/pages/Home/styles';
+import { BackToTopButton } from "../src/components/UI/BackToTopButton";
 
 const Home: NextPage = () => {
+  useRouter
+
   return (
     <>
       <Header />
-      <CarsContainer>
+      <CarsContainer
+        initial={{ opacity: 0, x: -350 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
         <CarComponent/>
         <CarComponent/>
         <CarComponent/>
@@ -20,8 +29,8 @@ const Home: NextPage = () => {
         <CarComponent/>
         <CarComponent/>
         <CarComponent/>
-        
       </CarsContainer>
+      <BackToTopButton />
     </>
   );
 };

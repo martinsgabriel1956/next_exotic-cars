@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   box-shadow: 0px 10px 30px #0000001A;
   padding: .75em .25em;
+  background-color: #fff;
 
   display: flex;
   align-items: center;
