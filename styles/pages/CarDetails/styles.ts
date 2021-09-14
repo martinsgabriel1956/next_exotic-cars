@@ -34,34 +34,44 @@ export const CarViewContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  margin-top: -3.5em;
+  margin-top: -9em;
 `;
 
 export const BackContainer = styled.div`
-  padding-left: 6em;
+  padding-left: 7em;
 `;
 
-export const LinkContent = styled.a`
+export const LinkContent = styled(motion.a)`
   cursor: pointer;
   border: 1px solid #313136;
-  padding: 0.75em 1em;
+  padding: 0.75em 1.5em;
   border-radius: 1.75em;
+
+  font-size: 16px;
+  font-weight: 300;
 
   display: flex;
   align-items: center;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #313136;
+    color: #ffffff;
+  }
 `;
 
 export const CarTypeContainer = styled.div`
-  margin-right: 8em;
+  margin-right: 12em;
   margin-bottom: 20em;
 
   h3 {
-    font-size: 2em;
-    margin-bottom: -0.25em;
+    font-size: 2.25em;
+    margin-bottom: -0.5em;
   }
 
   h4 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 300;
   }
 `;
@@ -82,5 +92,42 @@ export const BookContainer = styled.a`
 
   cursor: pointer;
   color: #fff;
-  padding: .75em 2.5em;
+  padding: .75em 2.25em;
+
+  margin-top: -2.5em;
+`;
+
+export const CarCardContainer = styled.ul`
+  margin: 2em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const LatestCarArrow = styled.button`
+  background-color: #313136;
+  margin-right: 3.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #313136;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  `;
+
+export const PreviousCarArrow = styled.button`
+  background-color: #313136;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #313136;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
