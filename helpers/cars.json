@@ -1,0 +1,17 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "modelo": "La Voiture Noire",
+      "marca": "Bugatti",
+      "pricePerDay": 2500,
+      "images": {
+        "logo": "",
+        "carImages": {
+          "bg": "https://patriotwarranty.com/wp-content/uploads/2020/02/kisspng-bugatti-veyron-bugatti-chiron-car-koenigsegg-reger-bugatti-5ab51c821e3cb9.7636086815218187541239.png",
+          "small": ""
+        }
+      }
+    }
+  ]
+}
