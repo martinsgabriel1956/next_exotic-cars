@@ -23,4 +23,13 @@ export const Container = styled.button<ContainerProps>`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    right: 50px;
+
+  }
+
+  @media (max-width: 768px) {
+    right: 20px;
+  }
 `;

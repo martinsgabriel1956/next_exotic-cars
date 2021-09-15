@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel";
+// import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel";
 
-import "@brainhubeu/react-carousel/lib/style.css";
+// import "@brainhubeu/react-carousel/lib/style.css";
 
 import { Header } from "../../src/components/Header";
 
