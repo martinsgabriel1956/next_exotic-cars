@@ -54,15 +54,15 @@ export const ButtonContainer = styled.div<hasClickedProps>`
   button:nth-child(1) {
     margin-right: 0.75em;
 
-    @media (max-width: 425px) {
+    @media (max-width: 767px) {
       margin-right: 0em;
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 767px) {
     flex-direction: column;
-    position: ${(props) => props.hasClicked === false && "absolute"};
-    display: ${(props) => (props.hasClicked === true ? "none" : "flex")};
+    position: ${(props) => props.hasClicked === true && "absolute"};
+    display: ${(props) => (props.hasClicked === false ? "none" : "flex")};
     top: 84px;
     right: -70px;
 

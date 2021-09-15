@@ -19,7 +19,8 @@ import {
   BookNowContainer,
   CarCardContainer,
   LatestCarArrow,
-  PreviousCarArrow
+  PreviousCarArrow,
+  ImageContainer
 } from "../../styles/pages/CarDetails/styles";
 
 import logo from "../../public/images/logo.png";
@@ -67,9 +68,9 @@ export default function CarDetails() {
                   </LinkContent>
                 </Link>
               </BackContainer>
-              <div>
+              <ImageContainer>
                 <Image src={carRed} alt="" />
-              </div>
+              </ImageContainer>
               <CarTypeContainer>
                 <h3>01</h3>
                 <h4>Red</h4>
@@ -90,7 +91,7 @@ export default function CarDetails() {
               </Link>
             </BookNowContainer>
           </section>
-          <section>
+          {/* <section>
             <CarCardContainer>
               <PreviousCarArrow>
                 <BsArrowLeft
@@ -108,7 +109,7 @@ export default function CarDetails() {
                 />
               </LatestCarArrow>
             </CarCardContainer>
-          </section>
+          </section> */}
         </main>
       </Container>
     </>

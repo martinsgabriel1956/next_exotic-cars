@@ -8,8 +8,11 @@ interface HamburguerProps {
 
 export const Container = styled.button<HamburguerProps>`
   display: none;
+
+  background: transparent;
+  border: none;
   
-  @media (max-width: 425px) {
+  @media (max-width: 767px) {
     display: block;
     position: absolute;
     margin-right: 6em;
