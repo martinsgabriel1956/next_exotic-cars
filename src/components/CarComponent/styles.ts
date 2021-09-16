@@ -53,9 +53,7 @@ export const HeaderInfo = styled.div`
 `;
 
 export const CarImage = styled.div`
-  img {
-    width: 100%;
-  }
+  margin-top: -30px;
 
   h3 {
     margin-top: -.025em;

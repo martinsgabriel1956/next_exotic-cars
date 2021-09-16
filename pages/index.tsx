@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/dist/client/router";
+import { useEffect, useState } from "react";
+import { api } from "../helpers/api";
 
 import { CarComponent } from "../src/components/CarComponent";
 import { Header } from "../src/components/Header";
@@ -7,9 +8,29 @@ import { BackToTopButton } from "../src/components/UI/BackToTopButton";
 
 import { CarsContainer } from '../styles/pages/Home/styles';
 
-const Home: NextPage = () => {
-  useRouter
+interface CarProps {
+  id: string;
+  modelo: string;
+  marca: string;
+  pricePerDay: number;
+  images: {
+    logo: string;
+    carImages: {
+      bg: string[];
+      cardImg: string[];
+    }
+  }
+}
 
+
+const Home: NextPage = () => {
+  const [car, setCar] = useState<CarProps[]>([]);
+
+  useEffect(() => {
+    api.get('/cars').then(res => {
+      setCar(res.data);
+    })
+  }, [])
   return (
     <>
       <Header />
@@ -18,22 +39,9 @@ const Home: NextPage = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
-        <CarComponent/>
+        {car.map(car => (
+          <CarComponent key={car.id} carProps={car} />
+        ))}
       </CarsContainer>
       <BackToTopButton />
     </>
