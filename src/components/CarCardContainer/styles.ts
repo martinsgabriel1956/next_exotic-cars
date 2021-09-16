@@ -36,4 +36,6 @@ export const ImageContainer = styled.div<styleProps>`
   z-index: 9999;
 
   position: absolute;
+
+  
 `;

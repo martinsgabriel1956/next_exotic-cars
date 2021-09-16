@@ -19,7 +19,7 @@ export const CarInfoContainer = styled.div`
   display: flex;
   align-items: center;
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 600px) {
     justify-content: center;
     margin-top: .25em;
     margin-left: 0em;
@@ -29,12 +29,22 @@ export const CarInfoContainer = styled.div`
     margin-left: 2.5em;
     margin-bottom: 2em;
 
+    @media (max-width: 320px) {
+      margin-left: 1.25em;
+    };
+    
+    img {
+      @media (min-width: 320px) {
+        width: 80px;
+      };
+    }
+
     h1 {
       color: #313136;
       font-size: 2em;
       margin-bottom: -0.35em;
 
-      @media (min-width: 320px) and (max-width: 767px) {
+      @media (min-width: 375px) and (max-width: 767px) {
         margin-bottom: -0.35em;
       }
     }
@@ -46,8 +56,20 @@ export const CarInfoContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 600px) {
     margin-top: 10em;
+  }
+  
+  @media (min-width: 601px) and (max-width: 767px) {
+    margin-top: 8em;
+  }
+
+  @media (min-width: 460px) and (max-width: 767px) {
+    img {
+      width: 448px;
+      height: 233px;
+    }
+    
   }
 `;
 
@@ -71,6 +93,26 @@ export const BackContainer = styled.div`
     bottom: 70px;
     padding-left: 0em;
   }
+
+  /* @media (min-width: 768px) and (max-width: 1248px) {
+    padding-left: 2em;
+  }
+  
+  @media (min-width: 1249px) and (max-width: 1264px) {
+    padding-left: 3em;
+  }
+  
+  @media (min-width: 1265px) and (max-width: 1295px) {
+    padding-left: 4em;
+  }
+  
+  @media (min-width: 1281px) and (max-width: 1296px) {
+    padding-left: 5em;
+  }
+ 
+  @media (min-width: 1297px) and (max-width: 1312px) {
+    padding-left: 6em;
+  } */
 `;
 
 export const LinkContent = styled(motion.a)`
@@ -145,7 +187,7 @@ export const BookContainer = styled.a`
 
   margin-top: -2.5em;
 
-  @media (min-width: 320px) and (max-width: 565px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     position: absolute;
     bottom: 10px;
   }

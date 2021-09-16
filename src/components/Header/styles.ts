@@ -29,13 +29,17 @@ export const Logo = styled.h1`
 
   padding-left: 4em;
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     padding-left: 0.5em;
   }
   span {
     margin-left: 0.25em;
     font-size: 16px;
     font-weight: normal;
+  }
+
+  @media(min-width: 601px) and (max-width: 767px) {
+    padding-left: 1em;
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -59,7 +63,11 @@ export const ButtonContainer = styled.div<hasClickedProps>`
     }
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 601px) and (max-width: 767px) {
+    padding-right: 2em;
+  }
+
+  @media (max-width: 600px) {
     flex-direction: column;
     position: ${(props) => props.hasClicked === true && "absolute"};
     display: ${(props) => (props.hasClicked === false ? "none" : "flex")};

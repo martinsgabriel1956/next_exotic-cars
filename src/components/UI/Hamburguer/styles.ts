@@ -12,7 +12,7 @@ export const Container = styled.button<HamburguerProps>`
   background: transparent;
   border: none;
   
-  @media (max-width: 767px) {
+  @media (max-width: 600px) {
     display: block;
     position: absolute;
     margin-right: 6em;
