@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import { Container, HeaderContainer, HeaderInfo, CarImage } from "./styles";
 
-import car from "../../../public/images/NoPath - Copia (16).png";
-
 interface CarComponentProps {
   carProps: {
     id: string;
@@ -28,7 +26,7 @@ export function CarComponent({ carProps: { id,
   const imgSrc = cardImg[0];
   return (
     <Container>
-      <Link href={`/${id}`}>
+      <Link href={`/car-details/${id}`}>
         <a>
           <HeaderContainer>
             <HeaderInfo>

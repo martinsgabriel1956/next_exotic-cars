@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ParsedUrlQuery } from "querystring";
+import { GetStaticProps, GetStaticPaths } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
@@ -23,17 +25,31 @@ import {
   ImageContainer,
 } from "../../styles/pages/CarDetails/styles";
 
-import logo from "../../public/images/logo.png";
+// import logo from "../../public/images/logo.png";
 import carRed from "../../public/images/car_red.png";
-import carRed2 from "../../public/images/car_red@2x.png";
-import carSilver2 from "../../public/images/car_silver@2x.png";
-import carYellow2 from "../../public/images/car_yellow@2x.png";
+import carRed2 from "../public/images/car_red@2x.png";
+import carSilver2 from "../public/images/car_silver@2x.png";
+import carYellow2 from "../public/images/car_yellow@2x.png";
 
 import { CarCard } from "../../src/components/CarCardContainer";
 import { api } from "../../helpers/api";
 
+interface CarProps {
+  id: string;
+  modelo: string;
+  marca: string;
+  pricePerDay: number;
+  images: {
+    logo: string;
+    carImages: {
+      bg: string[];
+      cardImg: string[];
+    };
+  };
+}
+
 interface CarComponentProps {
-  carProps: {
+  car: {
     id: string;
     modelo: string;
     marca: string;
@@ -48,7 +64,13 @@ interface CarComponentProps {
   };
 }
 
-export default function CarDetails({ carProps }: CarComponentProps) {
+interface Params extends ParsedUrlQuery {
+  slug: string;
+}
+
+export default function CarDetails({ car }: CarComponentProps) {
+  const logo = car.images.logo;
+
   return (
     <>
       <Container
@@ -61,12 +83,10 @@ export default function CarDetails({ carProps }: CarComponentProps) {
           <>
             <section>
               <CarInfoContainer>
-                <Image src={logo} alt="" />
+                <Image src={logo} alt="" width="500px" height="500px" />
                 <div>
-                  <h1>
-                    {carProps.marca} {carProps.modelo}
-                  </h1>
-                  <h2>${carProps.pricePerDay}/day</h2>
+                  <h1>{car.marca} {car.modelo}</h1>
+                  <h2>${car.pricePerDay}/day</h2>
                 </div>
               </CarInfoContainer>
               <CarViewContainer>
@@ -89,7 +109,7 @@ export default function CarDetails({ carProps }: CarComponentProps) {
                   </Link>
                 </BackContainer>
                 <ImageContainer>
-                  <Image src={carRed} alt="" />
+                  <Image src={carRed} alt=""  />
                 </ImageContainer>
                 <CarTypeContainer>
                   <h3>01</h3>
@@ -136,3 +156,48 @@ export default function CarDetails({ carProps }: CarComponentProps) {
     </>
   );
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const { data } = await api.get("/cars");
+
+  const paths = data.map((car: CarProps) => {
+    return {
+      params: {
+        slug: car.id,
+      }
+    }
+  })
+
+  return {
+    paths,
+    fallback: "blocking",
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { slug } = params as Params;
+
+  const { data } = await api.get(`/cars/${slug}`);
+
+  const car: CarProps = {
+      id: data.id,
+      modelo: data.modelo,
+      marca: data.marca,
+      pricePerDay: data.pricePerDay,
+      images: {
+        logo: data.images.logo,
+        carImages: {
+          bg: data.images.carImages.bg,
+          cardImg: data.images.carImages.cardImg,
+        },
+      },
+    };
+  ;
+
+  return {
+    props: {
+      car,
+    },
+    revalidate: 60 * 60,
+  };
+};
