@@ -8,7 +8,12 @@
       "images": {
         "logo": "https://logospng.org/download/bugatti/logo-bugatti-1024.png",
         "carImages": {
-          "bg": ["https://patriotwarranty.com/wp-content/uploads/2020/02/kisspng-bugatti-veyron-bugatti-chiron-car-koenigsegg-reger-bugatti-5ab51c821e3cb9.7636086815218187541239.png"],
+          "bg": [
+            {
+              "url": "https://patriotwarranty.com/wp-content/uploads/2020/02/kisspng-bugatti-veyron-bugatti-chiron-car-koenigsegg-reger-bugatti-5ab51c821e3cb9.7636086815218187541239.png",
+              "color": "black"
+            }
+          ],
           "cardImg": ["https://res.cloudinary.com/billionrent-com/image/upload/v1557940269/dqr4vb7iic0pypnqtbb5.png"]
         }
       }
@@ -21,140 +26,16 @@
       "images": {
         "logo": "https://i.pinimg.com/originals/3f/50/3c/3f503c55392a40ed5c1aeda98d0c270b.png",
         "carImages": {
-          "bg": ["https://files.porsche.com/filestore/image/multimedia/none/992-c2s-modelexplorer-04/normal/e6983412-cf38-11eb-80d9-005056bbdc38;sP;twebp/porsche-normal.webp"],
+          "bg": [
+            {
+              "url": "https://www.porsche.com/content/dam/porsche-site/common/porsche-logo/porsche-logo-white.svg",
+              "color": "silver"
+            }
+          ],
           "cardImg": ["https://www.porschecenterbh.com.br/uploads/08d2989090339b18c7e122b8ba09439b.png"]
         }
       }
-    },
-    {
-      "id": "3",
-      "modelo": "812 Superfast",
-      "marca": "Ferrari",
-      "pricePerDay": 7500,
-      "images": {
-        "logo": "https://i.pinimg.com/originals/e7/53/e4/e753e416c78a5c47dfbc79f421a5e70d.png",
-        "carImages": {
-          "bg": ["https://www.ferrari.com/content/dam/ferrari/common/en/homepage/homepage-hero-image/homepage-hero-image-desktop.jpg"],
-          "cardImg": ["https://cdn.drivek.it/configurator-icon/cars/gb/400/FERRARI/812-SUPERFAST/31989_COUPE-3-DOORS/newferrari-812-side-view-with-shadow.png"]
-        }
-      }
-    },
-    {
-      "id": "4",
-      "modelo": "Evoque",
-      "marca": "Land Rover",
-      "pricePerDay": 3500,
-      "images": {
-        "logo": "https://lh3.googleusercontent.com/proxy/fp0DXKRYSnqjuZxHhSELCeOWqDwMmS4-1FXxhG8RmIW-2UY70Ifd885lpEmuFBGi1NC93hJeyKJ5wtsl-rmOE4F_PtALpih1xAXDhLsi_G6qK9sw5fiaBViooHg",
-        "carImages": {
-          "bg": ["https://www.landrover.com/content/dam/landrover/vehicles/evoque/evoque-hatchback/evoque-hatchback-hero-image.jpg"],
-          "cardImg": ["https://images.jazelc.com/uploads/landrovervannuys-m2e/Evoque-768x349.png"]
-        }
-      }
-    },
-    {
-      "id": "5",
-      "modelo": "Aventador SVJ",
-      "marca": "Lamborghini",
-      "pricePerDay": 9500,
-      "images": {
-        "logo": "http://pngimg.com/uploads/lamborghini/lamborghini_PNG10709.png",
-        "carImages": {
-          "bg": ["https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/aventador/svj/aventador-svj-model-page-hero-image.jpg"],
-          "cardImg": ["https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/menu/09_09/menu_aventador_svj.jpg"]
-        }
-      }
-    },
-    {
-      "id": "6",
-      "modelo": "I4",
-      "marca": "BMW",
-      "pricePerDay": 8000,
-      "images": {
-        "logo": "https://i.pinimg.com/originals/b4/cd/7c/b4cd7ca7999d8a118f272abc88d91c16.png",
-        "carImages": {
-          "bg": ["https://www.bmw.com/content/dam/bmw/marketing/bmw-life/bmw-life-2018/bmw-life-2018-bmw-i4-coupe-hero-image.jpg"],
-          "cardImg": ["https://cdn.imagin.studio/getImage?angle=05&billingTag=web&customer=carwow&make=bmw&modelFamily=i4&modelVariant=hatchback&paintDescription=metallic---skyscraper-grey+BEC7C9&paintId=161549&tailoring=carwow&width=800&zoomLevel=0&zoomType=fullscreen"]
-        }
-      }
-    },
-    {
-      "id": "7",
-      "modelo": "RS5 Sportback",
-      "marca": "Audi",
-      "pricePerDay": 12000,
-      "images": {
-        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2016/12/audi-logo.png",
-        "carImages": {
-          "bg": ["https://beta.alpes.one/storage/app/uploads/public/5f2/d68/7ca/5f2d687cae05a708147484.png", "https://production.autoforce.com/uploads/version/profile_image/5048/comprar-tiptronic_885b9581f1.png", "https://beta.alpes.one/storage/app/uploads/public/5fc/92f/cac/5fc92fcac4844347970259.png"],
-          "cardImg": ["https://bluesky-cogcms.cdn.imgeng.in/media/36799/rs5sb.png?width=650&height=366&scale=both&quality=1"]
-        }
-      }
-    },
-    {
-      "id": "8",
-      "modelo": "Huracán EVO RWD SPYDER",
-      "marca": "Lamborghini",
-      "pricePerDay": 18000,
-      "images": {
-        "logo": "http://pngimg.com/uploads/lamborghini/lamborghini_PNG10709.png",
-        "carImages": {
-          "bg": ["https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/huracan/huracan-evo-rwd-spyder-model-page-hero-image.jpg"],
-          "cardImg": ["https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/menu/09_09/menu_huracan_evo_rwd_spider.jpg"]
-        }
-      }
-    },
-    {
-      "id": "9",
-      "modelo": "F8 Spider",
-      "marca": "Ferrari",
-      "pricePerDay": 20000,
-      "images": {
-        "logo": "https://i.pinimg.com/originals/e7/53/e4/e753e416c78a5c47dfbc79f421a5e70d.png",
-        "carImages": {
-          "bg": ["https://www.ferrari.com/content/dam/ferrari/common/en/homepage/homepage-hero-image/homepage-hero-image-desktop.jpg"],
-          "cardImg": ["https://res.cloudinary.com/driveau/images/w_1920,h_1080/f_webp,q_auto:eco,dpr_auto,w_1280,c_limit/f_auto,q_auto:eco/v1618987371//vehicles/showrooms/models/ferrari-f8-tributo/ferrari-f8-tributo.webp"]
-        }
-      }
-    },
-    {
-      "id": "10",
-      "modelo": "Panamera Turbo",
-      "marca": "Porsche",
-      "pricePerDay": 8000,
-      "images": {
-        "logo": "https://i.pinimg.com/originals/3f/50/3c/3f503c55392a40ed5c1aeda98d0c270b.png",
-        "carImages": {
-          "bg": ["https://www.porsche.com/content/dam/porsche/common/model/panamera/panamera-turbo/panamera-turbo-hero-image.jpg"],
-          "cardImg": ["https://files.porsche.com/filestore/image/multimedia/none/970-g2-tu-modelimage-sideshot/model/d9310d3f-d7e2-11e6-a122-0019999cd470/porsche-model.png"]
-        }
-      }
-    },
-    {
-      "id": "11",
-      "modelo": "Sport",
-      "marca": "Land Rover",
-      "pricePerDay": 8000,
-      "images": {
-        "logo": "lh3.googleusercontent.com",
-        "carImages": {
-          "bg": ["https://www.landrover.com/content/dam/landrover/vehicles/ranger/ranger-rover/ranger-rover-hero-image.jpg"],
-          "cardImg": ["https://www.webmotors.com.br/imagens/prod/348578/LAND_ROVER_RANGE_ROVER_SPORT_3.0_HSE_DYNAMIC_BLACK_4X4_V6_24V_TURBO_DIESEL_4P_AUTOMATICO_34857816305529360.png?s=fill&w=440&h=330&q=80&t=true"]
-        }
-      }
-    },
-    {
-      "id": "12",
-      "modelo": "Serie 1",
-      "marca": "BMW",
-      "pricePerDay": 10000,
-      "images": {
-        "logo": "https://i.pinimg.com/originals/b4/cd/7c/b4cd7ca7999d8a118f272abc88d91c16.png",
-        "carImages": {
-          "bg": ["https://www.bmw.com/content/dam/bmw/marketing/bmw-life/bmw-life-2018/bmw-life-2018-bmw-serie-1-coupe-hero-image.jpg"],
-          "cardImg": ["https://cdn.imagin.studio/getImage?make=bmw&modelFamily=series-1&modelRange=series-1&modelYear=2019&modelVariant=ch&bodySize=5&transmission=0&paintId=a96&paintDescription=alpine-white&angle=05&zoomType=relative&width=800&fileType=png&tailoring=leaseplan&customer=lpl&powerTrain=0&trim=0&interiorId=0&rimId=000001&steering=lhd"]
-        }
-      }
     }
+  
   ]
 }

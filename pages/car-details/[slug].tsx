@@ -34,6 +34,11 @@ import carYellow2 from "../public/images/car_yellow@2x.png";
 import { CarCard } from "../../src/components/CarCardContainer";
 import { api } from "../../helpers/api";
 
+interface carDetailsProps {
+  url: string;
+  color: string;
+}
+
 interface CarProps {
   id: string;
   modelo: string;
@@ -42,7 +47,7 @@ interface CarProps {
   images: {
     logo: string;
     carImages: {
-      bg: string[];
+      bg: carDetailsProps[];
       cardImg: string[];
     };
   };
@@ -57,20 +62,21 @@ interface CarComponentProps {
     images: {
       logo: string;
       carImages: {
-        bg: string[];
+        bg: carDetailsProps[];
         cardImg: string[];
       };
     };
   };
 }
-
 interface Params extends ParsedUrlQuery {
   slug: string;
 }
 
 export default function CarDetails({ car }: CarComponentProps) {
   const logo = car.images.logo;
+  const carImages = car.images.carImages.bg[0].url;
 
+  console.log(carImages);
   return (
     <>
       <Container
@@ -108,12 +114,17 @@ export default function CarDetails({ car }: CarComponentProps) {
                     </LinkContent>
                   </Link>
                 </BackContainer>
-                <ImageContainer>
-                  <Image src={carRed} alt=""  />
-                </ImageContainer>
+                {car.images.carImages.bg.map((car, index) => (
+                  <ImageContainer
+                    key={index}
+                  >
+                    <Image src={car.url} alt=""  />
+                  </ImageContainer>
+
+                ))}
                 <CarTypeContainer>
-                  <h3>01</h3>
-                  <h4>Red</h4>
+                  <h3>{car.images.carImages.bg.length < 10 ? `0${car.images.carImages.bg.length}` : `${car.images.carImages.bg.length}`}</h3>
+                  <h4>color</h4>
                 </CarTypeContainer>
               </CarViewContainer>
               <BookNowContainer>
@@ -187,7 +198,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       images: {
         logo: data.images.logo,
         carImages: {
-          bg: data.images.carImages.bg,
+          bg: [
+            {
+              url: data.images.carImages.bg.map((url: string) => url),
+              color: data.images.carImages.bg.map((color: string) => color),
+            }
+          ],
           cardImg: data.images.carImages.cardImg,
         },
       },
