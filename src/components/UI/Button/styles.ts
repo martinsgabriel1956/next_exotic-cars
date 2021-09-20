@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.button`
+interface ButtonProps {
+  isSignIn?: boolean;
+}
+
+export const Container = styled.button<ButtonProps>`
   color: #7B89F4;
   font-weight: bold;
   cursor: pointer;
@@ -14,5 +18,18 @@ export const Container = styled.button`
   &:hover {
     background: ${props => props.isSignIn === true ? '#7B89F4' : 'transparent'};
     color: ${props => props.isSignIn === true ? '#fff' : '#7B89F4'};
+  }
+
+  @media (min-width: 601px) and (max-width: 687px) {
+    padding: .35em .175em;
+
+    & + button {
+      margin-left: .75em;
+    }
+  }
+
+  @media (min-width: 688px) and (max-width: 826px) {
+    font-size: 1em;
+    padding: .35em .5em;
   }
 `;

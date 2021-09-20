@@ -18,6 +18,8 @@ export const Container = styled.div`
   @media (max-width: 425px) {
     position: relative;
   }
+
+  
 `;
 
 export const Logo = styled.h1`
@@ -27,7 +29,7 @@ export const Logo = styled.h1`
   font-weight: 500;
   letter-spacing: 2px;
 
-  padding-left: 4em;
+  padding: 0 1em 0 4em ;
 
   @media (max-width: 600px) {
     padding-left: 0.5em;
@@ -38,14 +40,7 @@ export const Logo = styled.h1`
     font-weight: normal;
   }
 
-  @media(min-width: 601px) and (max-width: 767px) {
-    padding-left: 1em;
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    padding-left: 3em;
-  }
-  @media (min-width: 1024px) and (max-width: 1439px) {
+  @media(min-width: 601px) and (max-width: 1439px) {
     padding-left: 3em;
   }
 `;
@@ -63,9 +58,7 @@ export const ButtonContainer = styled.div<hasClickedProps>`
     }
   }
 
-  @media (min-width: 601px) and (max-width: 767px) {
-    padding-right: 2em;
-  }
+  
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -80,8 +73,12 @@ export const ButtonContainer = styled.div<hasClickedProps>`
       height: 100vh;
       width: 80vw;
   }
+  
+  @media (min-width: 601px) and (max-width: 687px) {
+    padding-right: 8%;
+  }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    padding-right: 3em;
+  @media (min-width: 601px) and (max-width: 1023px) {
+    padding-right: 8%;
   }
 `;
