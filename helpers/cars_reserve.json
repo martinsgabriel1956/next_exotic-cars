@@ -1,0 +1,272 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "modelo": "California",
+      "marca": "Ferrari",
+      "pricePerDay": 725,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 11.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Red",
+          "icon": "/../public/images/car_reserve/Mask Group 11@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 11@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "modelo": "911 Turbo S",
+      "marca": "Porsche",
+      "pricePerDay": 725,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (16)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Orange",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (16)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (16)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "modelo": "911 Turbo S",
+      "marca": "Porsche",
+      "pricePerDay": 725,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (16)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Orange",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (16)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (16)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "modelo": "911 Turbo S",
+      "marca": "Porsche",
+      "pricePerDay": 725,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (17)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Silver",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (17)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (17)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "modelo": "911 GT3 RS",
+      "marca": "Porsche",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/kisspng-2018-porsche-911-porsche-930-car-porsche-911-gt3-2018-porsche-911-carrera-s-5b1b890fbdf223.114732101528531215778.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Gold",
+          "icon": "/../public/images/car_reserve/kisspng-2018-porsche-911-porsche-930-car-porsche-911-gt3-2018-porsche-911-carrera-s-5b1b890fbdf223.114732101528531215778@2x.png",
+          "mainImg": "/../public/images/car_reserve/kisspng-2018-porsche-911-porsche-930-car-porsche-911-gt3-2018-porsche-911-carrera-s-5b1b890fbdf223.114732101528531215778@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "modelo": "Continental GT",
+      "marca": "Bentley",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 8@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Blue",
+          "icon": "/../public/images/car_reserve/Mask Group 8@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 8@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "modelo": "M1 Competition",
+      "marca": "BMW",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 9@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "White",
+          "icon": "/../public/images/car_reserve/Mask Group 9@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 9@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "modelo": "4C Spider",
+      "marca": "Alfa Romeo",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 10@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Yellow",
+          "icon": "/../public/images/car_reserve/Mask Group 10@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 10@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "modelo": "P1 GTR",
+      "marca": "Mclaren",
+      "pricePerDay": 925,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (15)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Blue",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (15)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (15)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "modelo": "Aventador",
+      "marca": "Lamborghini",
+      "pricePerDay": 925,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (14)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Orange",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (14)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (14)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "modelo": "Veyron Spyder",
+      "marca": "Bugatti",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (13)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Blue",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (13)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (13)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "modelo": "Chevrolet",
+      "marca": "Corvett",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 7@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "White",
+          "icon": "/../public/images/car_reserve/Mask Group 7@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 7@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "modelo": "California",
+      "marca": "Ferrari",
+      "pricePerDay": 725,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/ferrari_PNG10674@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Red",
+          "icon": "/../public/images/car_reserve/Mask Group 13.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 13@2x.png"
+        },
+        {
+          "car_id": 2,
+          "color": "Yellow",
+          "icon": "/../public/images/car_reserve/car_yellow.png",
+          "mainImg": "/../public/images/car_reserve/car_yellow@2x.png"
+        },
+        {
+          "car_id": 3,
+          "color": "Silver",
+          "icon": "/../public/images/car_reserve/car_silver.png",
+          "mainImg": "/../public/images/car_reserve/car_silver@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "modelo": "Rolls-Royce",
+      "marca": "Wraith",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/NoPath - Copia (18)@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "Red",
+          "icon": "/../public/images/car_reserve/NoPath - Copia (18)@2x.png",
+          "mainImg": "/../public/images/car_reserve/NoPath - Copia (18)@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "modelo": "911 Turbo S",
+      "marca": "Porsche",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 6@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "White",
+          "icon": "/../public/images/car_reserve/Mask Group 6@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 6@2x.png"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "modelo": "AMG GTS",
+      "marca": "Mercedes Bens",
+      "pricePerDay": 825,
+      "logo": "/../public/images/car_reserve/ferrari_logo.png",
+      "cardImg": "/../public/images/car_reserve/Mask Group 5@2x.png",
+      "details": [
+        {
+          "car_id": 1,
+          "color": "White",
+          "icon": "/../public/images/car_reserve/Mask Group 5@2x.png",
+          "mainImg": "/../public/images/car_reserve/Mask Group 5@2x.png"
+        }
+      ]
+    }
+  ]
+}

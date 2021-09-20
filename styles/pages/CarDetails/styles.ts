@@ -2,14 +2,20 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
-  height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   background: transparent linear-gradient(125deg, #ffffff 0%, #d8d7d7 100%) 0%
     0% no-repeat padding-box;
+    
+    @media (min-width: 320px) and (max-width: 767px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    main {
+    background: transparent linear-gradient(125deg, #ffffff 0%, #d8d7d7 100%) 0%
+      0% no-repeat padding-box;
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    justify-content: center;
-    flex-direction: column;
   }
 `;
 
@@ -55,7 +61,9 @@ export const CarInfoContainer = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled(motion.div)`
+  
+  
   @media (min-width: 320px) and (max-width: 600px) {
     margin-top: 10em;
   }
@@ -120,6 +128,7 @@ export const LinkContent = styled(motion.a)`
   border: 1px solid #313136;
   padding: 0.75em 1.5em;
   border-radius: 1.75em;
+  margin-right: 3em;
 
   font-size: 16px;
   font-weight: 300;
@@ -184,8 +193,8 @@ export const BookContainer = styled.a`
   cursor: pointer;
   color: #fff;
   padding: 0.75em 2.25em;
-
-  margin-top: -2.5em;
+  
+  margin-top: -4em;
 
   @media (min-width: 320px) and (max-width: 767px) {
     position: absolute;
@@ -193,12 +202,18 @@ export const BookContainer = styled.a`
   }
 `;
 
-export const CarCardContainer = styled.ul`
-  margin: 2em 0;
+interface CarCardContainerProps {
+  card?: {}[];
+}
+
+export const CarCardContainer = styled.ul<CarCardContainerProps>`
+  margin-top: 2em;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: ${props => props.card?.length === 1 ? 'center' : 'space-between'};
+
+  
 `;
 
 export const LatestCarArrow = styled.button`

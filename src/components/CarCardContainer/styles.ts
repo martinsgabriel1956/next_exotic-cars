@@ -1,14 +1,16 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 interface styleProps {
   isActive: boolean;
+  color?: string | any;
 }
 
-export const Container = styled.li<styleProps>`
-  width: 234px;
-  height: 179px;
+export const Container = styled(motion.li)<styleProps>`
+  width: 309px;
+  height: 241px;
 
-  background: ${props => props.isActive === false ? '#cecece 0% 0% no-repeat padding-box' : 'transparent linear-gradient(52deg, #A1A7F4 0%, #E6D3F1 100%) 0% 0% no-repeat padding-box'};
+  background: ${props => props.isActive && props.color === false ? '#cecece 0% 0% no-repeat padding-box' : `transparent linear-gradient(52deg, ${props.color} 0%, #E6D3F1 100%) 0% 0% no-repeat padding-box`};
   box-shadow: 0px 8px 20px #0000001a;
 
   border-radius: 8px;
@@ -21,21 +23,20 @@ export const Container = styled.li<styleProps>`
 
   cursor: pointer;
 
-  margin-bottom: ${props => props.isActive === false ? 'none' : '80px'};
+  margin-bottom: ${props => props.isActive === false ? 'none' : '140px'};
   
+  &:hover {
+    
+  }
 `;
 
 export const ImageContainer = styled.div<styleProps>`
   width: 300px;
   height: 179px;
-  margin-left: 80px;
+  margin-left: ${props => props.isActive === false ? 20 : 30}px ;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  z-index: 9999;
-
-  position: absolute;
-
-  
+  transform: ${props => props.isActive === false ? '' : 'scale(1.40)'};
 `;

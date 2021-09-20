@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "json-server ./helpers/cars.json -w -d 750 -p 3333"
+    "server": "json-server ./helpers/cars_reserve.json -w -d 750 -p 3333"
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",

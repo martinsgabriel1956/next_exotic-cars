@@ -4,8 +4,10 @@ import Link from "next/link";
 import { Container, HeaderContainer, HeaderInfo, CarImage } from "./styles";
 
 interface carDetailsProps {
-  url: string;
+  car_id: number;
   color: string;
+  icon: string;
+  mainImg: string;
 }
 
 interface CarComponentProps {
@@ -14,13 +16,9 @@ interface CarComponentProps {
     modelo: string;
     marca: string;
     pricePerDay: number;
-    images: {
-      logo: string;
-      carImages: {
-        bg: carDetailsProps[];
-        cardImg: string[];
-      };
-    };
+    logo: string;
+    cardImg: string;
+    details?: carDetailsProps[];
   };
 }
 
@@ -30,12 +28,10 @@ export function CarComponent({
     marca,
     modelo,
     pricePerDay,
-    images: {
-      carImages: { cardImg },
-    },
+    cardImg,
   },
 }: CarComponentProps) {
-  const imgSrc = cardImg[0];
+  const imgSrc = cardImg;
   return (
     <Container>
       <Link href={`/car-details/${id}`}>
@@ -48,13 +44,13 @@ export function CarComponent({
             <button>...</button>
           </HeaderContainer>
           <CarImage>
-            <Image src={imgSrc} alt="" width="800%" height="400px" />
-            <h3>
-              <span>$</span>
-              {pricePerDay}
-              <span>/day</span>
-            </h3>
+            <Image src={imgSrc} alt="" width="225px" height="75px" />
           </CarImage>
+          <h3>
+            <span>$</span>
+            {pricePerDay}
+            <span>/day</span>
+          </h3>
         </a>
       </Link>
     </Container>
