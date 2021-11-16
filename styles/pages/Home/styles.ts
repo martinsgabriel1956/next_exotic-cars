@@ -6,22 +6,11 @@ export const CarsContainer = styled(motion.ul)`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  @media (max-width: 320px) {
-    padding-left: .35em;
-  }
-  
-  @media (min-width: 360px) {
-    padding-left: 1.5em;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding-left: 0;
+    justify-content: center;
   }
 
-  @media (min-width: 375px) {
-    padding-left: 2em;
-  }
-  
-  @media (min-width: 428px) {
-    padding-left: 4em;
-  }
-  
   @media (min-width: 320px) and (max-width: 428px) {
     grid-template-columns: repeat(1, 1fr);
   }

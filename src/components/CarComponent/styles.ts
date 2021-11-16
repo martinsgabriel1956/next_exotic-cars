@@ -15,6 +15,26 @@ export const Container = styled.li`
   list-style: none;
 
   cursor: pointer;
+
+  h3 {
+    &:nth-child(3) {
+      margin-top: .5em;
+      font-size: 1.5em;
+      color: #313136;
+      text-align: end;
+      padding-right: 0.75em;
+
+      span {
+        font-weight: 300;
+        font-size: 0.75em;
+
+        &:nth-child(1) {
+          font-weight: 700;
+          font-size: 0.65em;
+        }
+      }
+    }
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -22,7 +42,6 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-left: 1.25em;
-  
 
   button {
     background: transparent;
@@ -45,31 +64,15 @@ export const HeaderInfo = styled.div`
   }
 
   p {
-    letter-spacing: 0.0.5em;
-    margin-bottom: -.25em;
+    letter-spacing: 0.10em;
+    margin-bottom: -0.25em;
     text-transform: uppercase;
     font-weight: 300;
   }
 `;
 
 export const CarImage = styled.div`
-  margin-top: -30px;
-
-  h3 {
-    margin-top: -.025em;
-    font-size: 1.5em;
-    color: #313136;
-    text-align: end;
-    padding-right: .75em;
-
-    span {
-      font-weight: 300;
-      font-size: .75em;
-      
-      &:nth-child(1) {
-        font-weight: 700;
-        font-size: .65em;
-      }
-    }
-  }
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 `;

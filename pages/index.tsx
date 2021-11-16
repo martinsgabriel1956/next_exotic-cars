@@ -7,23 +7,20 @@ import { BackToTopButton } from "../src/components/UI/BackToTopButton";
 
 import { CarsContainer } from "../styles/pages/Home/styles";
 
-
 interface carDetailsProps {
-    url: string;
-    color: string;
+  car_id: number;
+  color: string;
+  icon: string;
+  mainImg: string;
 }
 interface CarProps {
   id: string;
   modelo: string;
   marca: string;
   pricePerDay: number;
-  images: {
-    logo: string;
-    carImages: {
-      bg: carDetailsProps[];
-      cardImg: string[];
-    };
-  };
+  logo: string;
+  cardImg: string;
+  details?: carDetailsProps[];
 }
 
 interface HomeProps {
@@ -53,25 +50,11 @@ export default Home;
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await api.get("/cars");
 
-  const cars: {} = data.map(({ id, modelo, marca, pricePerDay, images: { logo, carImages: {cardImg, bg} } }: CarProps) => {
-    return {
-      id,
-      modelo,
-      marca,
-      pricePerDay,
-      images: {
-        logo,
-        carImages: {
-          bg: bg.map(({ url, color }) => ({ url, color })),
-          cardImg,
-        },
-      },
-    };
-  });
+  console.log(data);
 
   return {
     props: {
-      cars
+      cars: data
     },
   };
 };
