@@ -4,9 +4,6 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-// import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel";
-
-// import "@brainhubeu/react-carousel/lib/style.css";
 
 import {
   Container,
